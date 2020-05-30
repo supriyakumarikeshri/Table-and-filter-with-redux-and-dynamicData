@@ -1,5 +1,5 @@
 ### Hosted Webpage
-https://supriyakumarikeshri.github.io/redux-cake-shop/
+https://supriyakumarikeshri.github.io/redux-api-tablev2/
 
 ### Added Dependency
 #### npm install redux react-redux
