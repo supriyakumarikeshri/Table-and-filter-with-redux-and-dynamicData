@@ -1,4 +1,4 @@
-import { REQUESTED_TABLEDATA, REQUESTED_TABLEDATA_SUCCEEDED, REQUESTED_TABLEDATA_FAILED  } from './tableTypes';
+import { REQUESTED_TABLEDATA, REQUESTED_TABLEDATA_SUCCEEDED, REQUESTED_TABLEDATA_FAILED, GET_FILTERED_DATA  } from './tableTypes';
 
  
 
@@ -27,3 +27,18 @@ export const fetchTableData = () => {//importing in TableContainer
       );
   }
 };
+
+ 
+export const searchTableData = (text) => {
+  return{
+    type: GET_FILTERED_DATA,
+    payLoad:  text
+  }
+}
+
+// export const searchTableData = (text) => dispatch=>{
+//   dispatch({
+//     type: GET_FILTERED_DATA,
+//     payLoad:  text
+//   })
+// }
